@@ -236,7 +236,7 @@
 .info-container .logo .hover-show.active .circle:nth-child(5) {
   position: absolute;
   transform: translateY(210%);
-  background: url(https://i.postimg.cc/25Qy8Mc6/react.webp);
+
   background-size: cover;
   background-position: center;
 }
