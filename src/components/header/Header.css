@@ -206,7 +206,7 @@
   opacity: 1;
 }
 .info-container .logo .hover-show.active .circle:nth-child(1) {
-  background: url(C:\Users\adrian\Desktop\proyect\portafolio\src\assets\img\html.png);
+  background: url();
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -215,21 +215,21 @@
 .info-container .logo .hover-show.active .circle:nth-child(2) {
   position: absolute;
   transform: translateX(150%) translateY(-150%);
-  background: url(C:\Users\adrian\Desktop\proyect\portafolio\src\assets\img\css.png);
+
   background-size: cover;
   background-position: center;
 }
 .info-container .logo .hover-show.active .circle:nth-child(3) {
   position: absolute;
   transform: translateX(210%);
-  background: url(C:\Users\adrian\Desktop\proyect\portafolio\src\assets\img\js.jpg);
+
   background-size: cover;
   background-position: center;
 }
 .info-container .logo .hover-show.active .circle:nth-child(4) {
   position: absolute;
   transform: translateX(150%) translateY(150%);
-  background: url(C:\Users\adrian\Desktop\proyect\portafolio\src\assets\img\figma.png);
+
   background-size: cover;
   background-position: center;
 }
@@ -243,21 +243,20 @@
 .info-container .logo .hover-show.active .circle:nth-child(6) {
   position: absolute;
   transform: translateX(-150%) translateY(150%);
-  background: url(C:\Users\adrian\Desktop\proyect\portafolio\src\assets\img\next.jpg);
+
   background-size: cover;
   background-position: center;
 }
 .info-container .logo .hover-show.active .circle:nth-child(7) {
   position: absolute;
   transform: translateX(-210%);
-  background: url(C:\Users\adrian\Desktop\proyect\portafolio\src\assets\img\tail.jpg);
+
   background-size: cover;
   background-position: center;
 }
 .info-container .logo .hover-show.active .circle:nth-child(8) {
   position: absolute;
   transform: translateX(-150%) translateY(-150%);
-  background: url(C:\Users\adrian\Desktop\proyect\portafolio\src\assets\img\redux.jpg);
 
   background-size: cover;
   background-position: center;

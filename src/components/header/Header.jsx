@@ -33,20 +33,45 @@ export default function Header() {
       <div id="info" className="info-container">
         <div className="logo">
           <div
-            className={`${toggleState ? "hover-show active" : "hover-show"}`}
+            className={`hover-show ${toggleState ? "active" : ""}`}
             onClick={change}
           >
-            <span className="circle"></span>
-            <span className="circle"></span>
-            <span className="circle"></span>
-            <span className="circle"></span>
-            <span className="circle"></span>
-            <span className="circle"></span>
-            <span className="circle"></span>
-            <span className="circle"></span>
+            <span
+              className="circle"
+              style={{ backgroundImage: `url(${image7})` }}
+            ></span>
+            <span
+              className="circle"
+              style={{ backgroundImage: `url(${image8})` }}
+            ></span>
+            <span
+              className="circle"
+              style={{ backgroundImage: `url(${image9})` }}
+            ></span>
+            <span
+              className="circle"
+              style={{ backgroundImage: `url(${image10})` }}
+            ></span>
+            <span
+              className="circle"
+              style={{ backgroundImage: `url(${image11})` }}
+            ></span>
+            <span
+              className="circle"
+              style={{ backgroundImage: `url(${image12})` }}
+            ></span>
+            <span
+              className="circle"
+              style={{ backgroundImage: `url(${image13})` }}
+            ></span>
+            <span
+              className="circle"
+              style={{ backgroundImage: `url(${image14})` }}
+            ></span>
           </div>
           <img src={imgPerfil} alt="imagen" />
         </div>
+
         <div id="about" className="contain">
           <h2 className="contain-title">
             <h1 className="titl">Acerca de mí:</h1>
