@@ -1,5 +1,13 @@
 /* titulo */
+.info-container .logo .hover-show.active {
+  animation: showspin 8s linear 2s infinite;
+}
 
+@keyframes showspin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .component-title {
   font-size: 1.5rem;
   font-weight: bold;

@@ -28,11 +28,13 @@ export default function App() {
   };
 
   return (
+    <div className="scrollable-content">
     <div className="container">
       <Header />
       <ButtonList categories={categories} filterCategory={filterCategory} />
       <ArticleList articles={articles} />
       <Footer />
+    </div>
     </div>
   );
 }
