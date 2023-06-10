@@ -90,8 +90,7 @@ export default function Header() {
             <p className="dim">
               Diseñador UI/UX y Desarrollador web enfocado en el área de
               front-end utilizando herramientas de edición de código web como
-              HTML, CSS, Figma, JavaScript, y frameworks como React Native y
-              Next.js.
+              HTML, CSS,JavaScript, y frameworks como React Native y Next.js.
             </p>
           </div>
 
