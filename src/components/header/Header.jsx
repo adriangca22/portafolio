@@ -19,6 +19,10 @@ import image11 from "../../assets/img/react.png";
 import image12 from "../../assets/img/next.jpg";
 import image13 from "../../assets/img/tail.jpg";
 import image14 from "../../assets/img/redux.jpg";
+import image15 from "../../assets/img/merak.png";
+import image16 from "../../assets/img/gamers.png";
+import image17 from "../../assets/img/mine.png";
+import image18 from "../../assets/img/futbol.png";
 
 export default function Header() {
   const [toggleState, setToggleState] = useState(true);
@@ -170,7 +174,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={image1} alt="Imagen 1" />
+              <img src={image1} alt="Imagen 15" />
             </a>
             <div className="image-info">
               <h3 className="image-title">
@@ -181,6 +185,7 @@ export default function Header() {
               </p>
             </div>
           </div>
+
           <div className="gallery-item">
             <a
               href="https://music-web-93fd8.web.app/"
@@ -196,6 +201,74 @@ export default function Header() {
               <p className="image-description">#html #Sass #css #JavaScript</p>
             </div>
           </div>
+
+          <div className="gallery-item">
+            <a
+              href="https://merak-us.web.app/#home"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image15} alt="Imagen 2" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">
+                modelo de pagina web landing page MerakUs{" "}
+              </h3>
+              <p className="image-description">
+                #html #Bootstrap #Sass #css #JavaScript
+              </p>
+            </div>
+          </div>
+          <div className="gallery-item">
+            <a
+              href="https://gamersz-efeed.web.app/#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image16} alt="Imagen 2" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">
+                modelo de pagina web Blog de juegos.{" "}
+              </h3>
+              <p className="image-description">
+                #html #Sass #Bootstrap #css #JavaScript
+              </p>
+            </div>
+          </div>
+          <div className="gallery-item">
+            <a
+              href="https://restaurante-e233b.web.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image17} alt="Imagen 2" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">modelo pagina de restaurante </h3>
+              <p className="image-description">
+                #html #Bootstrap #Sass #css #JavaScript
+              </p>
+            </div>
+          </div>
+          <div className="gallery-item">
+            <a
+              href="https://lu4pvhvxutjvwdpzfaogra.on.drv.tw/www.ftubol.demo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image18} alt="Imagen 2" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">
+                modelo de pagina Ranking de futbolistas.{" "}
+              </h3>
+              <p className="image-description">
+                #html #Sass #Bootstrap #css #JavaScript
+              </p>
+            </div>
+          </div>
+
           <div className="gallery-item">
             <a
               href="https://gamers-bdcb9.web.app/"
