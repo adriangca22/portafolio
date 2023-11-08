@@ -407,7 +407,7 @@
 }
 @media screen and (max-width: 960px) {
   .contain {
-    margin-top: 200px; /* Agregar margen superior en versiones móviles y tablets */
+    margin-top: 400px; /* Agregar margen superior en versiones móviles y tablets */
   }
 }
 
