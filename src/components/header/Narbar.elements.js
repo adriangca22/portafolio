@@ -5,8 +5,8 @@ export const Container = styled.div`
   height: 55px;
   background: linear-gradient(to right, #333333, #000000);
   border-radius: 30px;
-  opacity: 0.8;
-  box-shadow: 0 8px 9px rgba(0, 0, 0, 0.8); 
+  opacity: 0.7;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8); 
 `;
 
 export const Wrapper = styled.div`
@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
+    margin-left: 5%
 `;
 
 export const LogoContainer = styled.div`
@@ -57,12 +57,13 @@ export const Menu = styled.ul`
     position: absolute;
     top: 70px;
     left: ${(props) => (props.open ? "0" : "-100%")};
-    width: 100%;
-    height: 90vh;
+    width: 70%;
+    height: 65vh;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     transition: 0.5s all ease;
+    border-radius:20px;
   }
 `;
 
