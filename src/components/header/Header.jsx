@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
-
+import Navbar from "./Navbar"; // Asegúrate de que la ruta sea correcta
+import ImageCarousel from "./ImageCarousel";
 import Buttons from "../Buttons/Buttons";
 import imgPerfil from "../../assets/img/mclovin.jpg";
 import certificateImg1 from "../../assets/img/certificate1.jpg";
@@ -33,7 +34,8 @@ export default function Header() {
 
   return (
     <>
-      <h1 className="title">Mi Portafolio Web</h1>
+      <Navbar />
+
       <div id="info" className="info-container">
         <div className="logo">
           <div
@@ -76,9 +78,11 @@ export default function Header() {
           <img src={imgPerfil} alt="imagen" />
         </div>
 
-        <div id="about" className="contain">
+        <div className="contain">
           <h2 className="contain-title">
-            <h1 className="titl">Acerca de mí:</h1>
+            <h1 id="abo" className="titl">
+              Acerca de mí:
+            </h1>
           </h2>
           <div>
             <p>
@@ -92,9 +96,10 @@ export default function Header() {
               web.
             </p>
             <p className="dim">
-              Diseñador UI/UX y Desarrollador web enfocado en el área de
-              front-end utilizando herramientas de edición de código web como
-              HTML, CSS,JavaScript, y frameworks como React Native y Next.js.
+              Soy un creativo Diseñador UI/UX y Desarrollador web con una fuerte
+              orientación hacia el frontend haciendo uso de una amplia gama de
+              herramientas tanto de Adobe y Figma para el Diseño web, así como
+              para la edición de código, incluyendo HTML, CSS y JavaScript.
             </p>
           </div>
 
@@ -102,7 +107,9 @@ export default function Header() {
         </div>
       </div>
       <div className="component-container">
-        <h2 className="component-title">experiencia y tecnologias </h2>
+        <h2 id="expe" className="component-title">
+          experiencia y tecnologias{" "}
+        </h2>
         <p className="component-description">
           Soy un diseñador web con tres años de experiencia en el campo del
           diseño UI/UX. Me especializo en el diseño de interfaces de usuario
@@ -165,8 +172,17 @@ export default function Header() {
           <img src={certificateImg2} alt="Certificado 2" />
         </div>
       </div>
+      <div>
+        <h2 id="carro" className="gal-title pt-20">
+          Diseños Ux/UI
+        </h2>
+      </div>
+      <ImageCarousel />
+
       <div className="gallery">
-        <h2 className="gallery-title">Mis proyectos</h2>
+        <h2 id="galeria" className="gallery-title">
+          Mis proyectos
+        </h2>
         <div className="gallery-images">
           <div className="gallery-item">
             <a
