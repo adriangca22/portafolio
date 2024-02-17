@@ -24,6 +24,7 @@ import image15 from "../../assets/img/merak.png";
 import image16 from "../../assets/img/gamers.png";
 import image17 from "../../assets/img/mine.png";
 import image18 from "../../assets/img/futbol.png";
+import portfolioImage from "../../assets/img/adri.png";
 
 export default function Header() {
   const [toggleState, setToggleState] = useState(true);
@@ -79,40 +80,46 @@ export default function Header() {
         </div>
 
         <div className="contain">
+                     <div style={{ fontSize: '35px', fontFamily: 'Arial, sans-serif' }}>
+
+
+  </div>
           <h2 className="contain-title">
+
             <h1 id="abo" className="titl">
-              Acerca de mí:
+                       <img src={portfolioImage} alt="Portafolio" style={{ width: '110px', height: '80px', margintop: '-50px',position: 'absolute', // establecer posición absoluta
+    top: '-30px',left: '10px' }} />  Acerca de mí:
             </h1>
+
           </h2>
           <div>
-            <p>
-              <span className="tit">Nombres: </span>Adrian Gonzalez
-            </p>
-            <p>
-              <span className="tit">Carrera: </span>Informático
-            </p>
-            <p>
-              <span className="tit">Profesión: </span>Programador y diseñador
-              web.
-            </p>
+
             <p className="dim">
-              Soy un creativo Diseñador UI/UX y Desarrollador web con una fuerte
-              orientación hacia el frontend haciendo uso de una amplia gama de
-              herramientas tanto de Adobe y Figma para el Diseño web, así como
-              para la edición de código, incluyendo HTML, CSS y JavaScript.
+             ¡Hola! Soy Adrian González, un apasionado del diseño UI/UX 
+             y desarrollo web. Mi enfoque principal se centra en el frontend, donde me 
+             especializo en la creación de experiencias digitales cautivadoras y funcionales.
+             Desde el concepto hasta la implementación, utilizo una amplia 
+            variedad de herramientas, desde Adobe hasta Figma, para dar vida a mis ideas. Además, me sumerjo en la codificación con HTML,
+              CSS y JavaScript para asegurar que mis diseños se conviertan en sitios web interactivos y atractivos.
+
+
+
             </p>
           </div>
 
           <Buttons />
+    <span className="poder">
+   
+    </span>
         </div>
+
       </div>
       <div className="component-container">
         <h2 id="expe" className="component-title">
           experiencia y tecnologias{" "}
         </h2>
         <p className="component-description">
-          Soy un diseñador web con tres años de experiencia en el campo del
-          diseño UI/UX. Me especializo en el diseño de interfaces de usuario
+        Me especializo en el diseño de interfaces de usuario
           intuitivas y atractivas para aplicaciones web y sitios web. Mi enfoque
           principal se centra en la edición de código HTML y CSS para lograr una
           estructura sólida y estilos visuales impactantes.A lo largo de mi
@@ -167,6 +174,10 @@ export default function Header() {
 
       <div className="certificates">
         <h2 className="certificates-title">Certificados</h2>
+            <p className="component-description">
+        estos son mis certificados otorgados por la academia freecodecamp para el  diseño web responsivo y 
+          el manejo de datos y estructuras en javascript.
+        </p>
         <div className="certificate-images">
           <img src={certificateImg1} alt="Certificado 1" />
           <img src={certificateImg2} alt="Certificado 2" />

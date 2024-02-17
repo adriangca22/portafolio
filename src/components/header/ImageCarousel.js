@@ -5,13 +5,15 @@ import image3 from "../../assets/img/jero.png";
 import image4 from "../../assets/img/aka.png";
 import image5 from "../../assets/img/roro.png";
 import image6 from "../../assets/img/dog.png";
-import image7 from "../../assets/img/tope.png";
-import image8 from "../../assets/img/dog.png";
+import image7 from "../../assets/img/pito.png";
+import image8 from "../../assets/img/tope.png";
 import image9 from "../../assets/img/Group2.png";
 import image10 from "../../assets/img/Group4.png";
 import image11 from "../../assets/img/group3.png";
 import image12 from "../../assets/img/group7.png";
 import image13 from "../../assets/img/Group6.png";
+import image14 from "../../assets/img/pero.png";
+
 import './swiper.css'; // Importa tu archivo CSS
 import 'tailwindcss/tailwind.css';
 
@@ -30,6 +32,7 @@ const ImageCarousel = () => {
     image11,
     image12,
     image13,
+    image14,
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
