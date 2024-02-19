@@ -1,4 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
+import './swiper.css';
+import 'tailwindcss/tailwind.css';
+
 import image0 from "../../assets/img/reloj.png";
 import image1 from "../../assets/img/nft.jpg";
 import image2 from "../../assets/img/jopx.png";
@@ -15,59 +18,66 @@ import image12 from "../../assets/img/group7.png";
 import image13 from "../../assets/img/Group6.png";
 import image14 from "../../assets/img/pero.png";
 
-import './swiper.css'; // Importa tu archivo CSS
-import 'tailwindcss/tailwind.css';
+const Carousel = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [delay, setDelay] = useState(4000);
+  const [isPlaying, setIsPlaying] = useState(true);
 
-const ImageCarousel = () => {
-  const images = [
-    image0,
-    image1,
-    image2,
-    image3,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
-    image10,
-    image11,
-    image12,
-    image13,
-    image14,
+  const slides = [
+    { image: image0, alt: 'background-image' },
+    { image: image1, alt: 'background-image' },
+    { image: image2, alt: 'background-image' },
+    { image: image3, alt: 'background-image' },
+    { image: image4, alt: 'background-image' },
+    { image: image5, alt: 'background-image' },
+    { image: image6, alt: 'background-image' },
+    { image: image7, alt: 'background-image' },
+    { image: image8, alt: 'background-image' },
+    { image: image9, alt: 'background-image' },
+    { image: image10, alt: 'background-image' },
+    { image: image11, alt: 'background-image' },
+    { image: image12, alt: 'background-image' },
+    { image: image13, alt: 'background-image' },
+    { image: image14, alt: 'background-image' },
   ];
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const containerRef = useRef(null);
-
-  const handleScroll = (e) => {
-    if (e.deltaY > 0) {
-      // Desplaza hacia abajo para mostrar la siguiente imagen
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex < images.length - 1 ? prevIndex + 1 : prevIndex
-      );
-    } else if (e.deltaY < 0) {
-      // Desplaza hacia arriba para mostrar la imagen anterior
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex > 0 ? prevIndex - 1 : prevIndex
-      );
-    }
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
   };
 
+  const handleNext = () => {
+    setActiveIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  useEffect(() => {
+    let intervalId;
+    if (isPlaying) {
+      intervalId = setInterval(() => {
+        setActiveIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
+      }, delay);
+    }
+    return () => clearInterval(intervalId);
+  }, [isPlaying, delay, slides.length]);
+
   return (
-    <div className="relative image-carousel-container sm:w-full" onWheel={handleScroll} ref={containerRef}>
-      <div className="image-carousel-content">
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Image ${index + 1}`}
-            className="w-full h-auto sm:h-80 sm:w-auto object-cover cursor-pointer"
-          />
-        ))}
+    <div className="carousel-container">
+      <div className="carousel">
+        <div className="carousel-track" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
+          {slides.map((slide, index) => (
+            <div className={`carousel-item ${index === activeIndex ? 'active-slide' : ''}`} key={index}>
+              <img className="carousel-image" src={slide.image} alt={slide.alt} />
+            </div>
+          ))}
+        </div>
+        <button className="carousel-button carousel-button__left" onClick={handlePrev}>
+          <img src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png" alt="left" />
+        </button>
+        <button className="carousel-button carousel-button__right" onClick={handleNext}>
+          <img src="https://www.iconpacks.net/icons/2/free-arrow-right-icon-3098-thumb.png" alt="right" />
+        </button>
       </div>
     </div>
   );
 };
 
-export default ImageCarousel;
+export default Carousel;

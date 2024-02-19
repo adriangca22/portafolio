@@ -320,15 +320,16 @@
 }
 .info-container img {
   position: absolute;
-  height: 220px;
-  width: 220px;
-  border-radius: 50%;
-  
+  height: 180px;
+  width: 180px;
+  border-radius: 50%; /* Borde redondeado */
+  overflow: hidden; /* Para asegurar que el borde redondeado se aplique correctamente */
   transform: translate(-200px);
   animation: fade-in 1s ease 1 0.5s forwards;
   cursor: pointer;
-  box-shadow: 8 9 10px rgb(255, 255, 255);
+ 
 }
+
 @keyframes fade-in {
   to {
     transform: translate(0);

@@ -24,6 +24,7 @@ import image15 from "../../assets/img/merak.png";
 import image16 from "../../assets/img/gamers.png";
 import image17 from "../../assets/img/mine.png";
 import image18 from "../../assets/img/futbol.png";
+import image19 from "../../assets/img/Word.png";
 import portfolioImage from "../../assets/img/adri.png";
 
 export default function Header() {
@@ -76,7 +77,8 @@ export default function Header() {
               style={{ backgroundImage: `url(${image14})` }}
             ></span>
           </div>
-          <img src={imgPerfil} alt="imagen" />
+          <img src={imgPerfil} alt="imagen"  />
+
         </div>
 
         <div className="contain">
@@ -169,8 +171,15 @@ export default function Header() {
 
             <div className="image-text" data-text="Redux"></div>
           </div>
+          <div className="image-wrapper">
+            <img src={image19} alt="Imagen 19" className="small-image" />
+
+            <div className="image-text" data-text="Wordpress"></div>
+          </div>
         </div>
       </div>
+      
+      
 
       <div className="certificates">
         <h2 className="certificates-title">Certificados</h2>

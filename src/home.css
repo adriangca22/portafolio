@@ -20,6 +20,11 @@
   border-radius: 50%;
   user-select: none;
 }
+.image-hover-effect:hover {
+  /* Aquí puedes definir los estilos para el efecto de hover */
+  opacity: 0.8; /* Ejemplo: Reduce la opacidad de la imagen */
+}
+
 
 .home-container .logo .hover-show {
   position: absolute;
