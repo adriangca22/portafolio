@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import image0 from "../../assets/img/reloj.png";
 import image1 from "../../assets/img/nft.jpg";
 import image2 from "../../assets/img/jopx.png";
 import image3 from "../../assets/img/jero.png";
@@ -19,6 +20,7 @@ import 'tailwindcss/tailwind.css';
 
 const ImageCarousel = () => {
   const images = [
+    image0,
     image1,
     image2,
     image3,
