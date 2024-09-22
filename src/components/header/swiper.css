@@ -1,52 +1,147 @@
 .carousel-container {
   position: relative;
-  width: 100%;
+  width: 90%; /* Reducido de 100% a 90% */
+  max-width: 1000px; /* Añadido un ancho máximo */
+  margin: 0 auto; /* Centrar el carrusel */
   overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
 }
+Container {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  position: fixed; /* Navbar fijo */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+MenuItemLink {
+  color: #111; /* Color neutro para los íconos */
+  transition: transform 0.2s ease-in-out;
+}
+
+MenuItemLink:hover {
+  transform: scale(1.1); /* Animación de hover */
+  color: #03B1E6; /* Color de acento */
+}
+
+MobileIcon {
+  cursor: pointer;
+}
+
 
 .carousel {
   position: relative;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .carousel-item {
   flex-shrink: 0;
   width: 100%;
+  height: 550px; /* Altura fija para todas las imágenes */
   position: relative;
+  opacity: 0.7;
+  transition: all 0.5s ease;
+  transform: scale(0.95);
+}
+
+.carousel-item.active-slide {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .carousel-image {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item:hover .carousel-image {
+  transform: scale(1.05);
 }
 
 .carousel-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background:  rgba(167, 167, 167, 0.452);
+  background: rgba(255, 255, 255, 0.2);
   border: none;
   cursor: pointer;
   z-index: 1;
-  width: 40px; /* Ajusta el tamaño de las flechas */
-  height: 40px; /* Ajusta el tamaño de las flechas */
-  border-radius: 50%; /* Hace el botón redondo */
-  transition: background 0.3s ease; /* Transición suave */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-button:hover {
-  background: rgba(255, 252, 252, 0.63); /* Cambia el color de fondo al hacer hover */
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-button img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
 }
 
 .carousel-button__right {
-  right: 10px;
+  right: 20px;
 }
 
 .carousel-button__left {
-  left: 10px;
+  left: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.carousel-item {
+  animation: fadeIn 0.5s ease;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.indicator.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+.indicator:hover {
+  background: rgba(255, 255, 255, 0.8);
 }

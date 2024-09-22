@@ -1,92 +1,93 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
-  Container,
-  LogoContainer,
-  Wrapper,
-  Menu,
-  MenuItem,
-  MenuItemLink,
-  MobileIcon,
-} from "./Narbar.elements";
-import {
-  FaDesktop ,
   FaBars,
   FaTimes,
   FaHome,
   FaUserAlt,
   FaBriefcase,
-  FaGlasses,
+  FaDesktop,
+  FaInstagram,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaWhatsapp,
 } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 import { IconContext } from "react-icons";
-import portfolioImage from "../../assets/img/adri.png";
+import './Navbar.css';
+
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
 
   return (
-    <Container>
-      <Wrapper>
-        <IconContext.Provider value={{ style: { fontSize: "2em" } }}>
-        
-      
-       
-          <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
-            {showMobileMenu ? <FaTimes /> : <FaBars />}
-          </MobileIcon>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <IconContext.Provider value={{ style: { fontSize: "1.5rem", color: "#fff" } }}>
+        <div className="mobile-icon" onClick={toggleMobileMenu}>
+          {showMobileMenu ? <FaTimes /> : <FaBars />}
+        </div>
 
-          <Menu open={showMobileMenu}>
-            <MenuItem>
-  <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-  <div style={{ fontSize: '15px', fontFamily: 'Arial, sans-serif', textShadow: '0 2px 4px rgba(3, 177, 230, 0.6)' }}>
-  {/* Utiliza la imagen en lugar del texto */}
-  <img src={portfolioImage} alt="Portafolio" style={{ width: '50px', height: '40px', marginBottom: '14px' }} />
+        {/* Redes sociales en el header */}
+        <div className="social-icons flex gap-4">
+          
+  <a href="https://instagram.com/adrian_designerr33?igshid=MmJiY2I4NDBkZg==" target="_blank" rel="noopener noreferrer">
+    <FaInstagram className="social-icon text-white w-4 h-4" />
+  </a>
+  <a href="https://www.facebook.com/people/Adrian-Gonzalez/pfbid02o3tocCAoaFo8onahZZEZGGr5K4aegj4MaeMtsbBvy2Jjrug9VwcnvfHpoUgz2Gfzl/" target="_blank" rel="noopener noreferrer">
+    <FaFacebookF className="social-icon text-white w-4 h-4" />
+  </a>
+  <a href="https://www.linkedin.com/in/adrian-gonzalez-6257aa204" target="_blank" rel="noopener noreferrer">
+    <FaLinkedinIn className="social-icon text-white w-4 h-4" />
+  </a>
+  <a href="https://api.whatsapp.com/send/?phone=%2B5804249070139&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+    <FaWhatsapp className="social-icon text-white w-4 h-4" />
+  </a>
 </div>
 
-  </MenuItemLink>
-</MenuItem>
-            <MenuItem>
-              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}href='#abo'>
-                <div >
-                  <FaHome />
-                  Inicio
-                </div>
-              </MenuItemLink>
-            </MenuItem>
-            <MenuItem>
-              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}href='#expe'>
-                <div >
-                  <FaUserAlt />
-                  Experiencia
-                </div>
-              </MenuItemLink>
-            </MenuItem>
-            <MenuItem>
-              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}href="#galeria">
-                <div>
-                  <FaBriefcase />
-                  Proyectos web
-                </div>
-              </MenuItemLink>
-            </MenuItem>
-            <MenuItem>
-              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}href="#carro">
-                <div>
-                <FaDesktop />
-                  Diseños Ux/UI
-                </div>
-              </MenuItemLink>
-            </MenuItem>
-            <MenuItem>
-              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}href="#footer">
-                <div>
-                  <FaGlasses />
-                  Contactame
-                </div>
-              </MenuItemLink>
-            </MenuItem>
-          </Menu>
-        </IconContext.Provider>
-      </Wrapper>
-    </Container>
+        <ul className={`navbar-list ${showMobileMenu ? 'open' : ''}`}>
+          <li className="navbar-item" style={{ "--item-index": 0 }}>
+            <a href="#abo" onClick={toggleMobileMenu}>
+              <FaHome className="icon-mobile" />
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li className="navbar-item" style={{ "--item-index": 1 }}>
+            <a href="#expe" onClick={toggleMobileMenu}>
+              <FaUserAlt className="icon-mobile" />
+              <span>Experiencia</span>
+            </a>
+          </li>
+          <li className="navbar-item" style={{ "--item-index": 2 }}>
+            <a href="#galeria" onClick={toggleMobileMenu}>
+              <FaBriefcase className="icon-mobile" />
+              <span>Proyectos web</span>
+            </a>
+          </li>
+          <li className="navbar-item" style={{ "--item-index": 3 }}>
+            <a href="#carro" onClick={toggleMobileMenu}>
+              <FaDesktop className="icon-mobile" />
+              <span>Diseños Ux/UI</span>
+            </a>
+          </li>
+          <li className="navbar-item" style={{ "--item-index": 4 }}>
+            <a href="#footer" onClick={toggleMobileMenu}>
+              <FiMail className="icon-mobile" />
+              <span>Contáctame</span>
+            </a>
+          </li>
+        </ul>
+      </IconContext.Provider>
+    </nav>
   );
 };
 

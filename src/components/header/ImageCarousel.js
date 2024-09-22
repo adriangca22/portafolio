@@ -4,19 +4,20 @@ import 'tailwindcss/tailwind.css';
 
 import image0 from "../../assets/img/reloj.png";
 import image1 from "../../assets/img/nft.jpg";
-import image2 from "../../assets/img/jopx.png";
-import image3 from "../../assets/img/jero.png";
-import image4 from "../../assets/img/aka.png";
+import image2 from "../../assets/img/jero.png";
+import image3 from "../../assets/img/eso.jpg";
+import image4 from "../../assets/img/ram.jpg";
 import image5 from "../../assets/img/roro.png";
 import image6 from "../../assets/img/dog.png";
 import image7 from "../../assets/img/pito.png";
-import image8 from "../../assets/img/tope.png";
+import image8 from "../../assets/img/plane.jpg";
 import image9 from "../../assets/img/Group2.png";
 import image10 from "../../assets/img/Group4.png";
 import image11 from "../../assets/img/group3.png";
 import image12 from "../../assets/img/group7.png";
 import image13 from "../../assets/img/Group6.png";
 import image14 from "../../assets/img/pero.png";
+import image15 from "../../assets/img/papu.png";
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -39,6 +40,7 @@ const Carousel = () => {
     { image: image12, alt: 'background-image' },
     { image: image13, alt: 'background-image' },
     { image: image14, alt: 'background-image' },
+    { image: image15, alt: 'background-image' },
   ];
 
   const handlePrev = () => {
@@ -64,7 +66,10 @@ const Carousel = () => {
       <div className="carousel">
         <div className="carousel-track" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
           {slides.map((slide, index) => (
-            <div className={`carousel-item ${index === activeIndex ? 'active-slide' : ''}`} key={index}>
+            <div 
+              className={`carousel-item ${index === activeIndex ? 'active-slide' : ''}`} 
+              key={index}
+            >
               <img className="carousel-image" src={slide.image} alt={slide.alt} />
             </div>
           ))}
@@ -75,6 +80,15 @@ const Carousel = () => {
         <button className="carousel-button carousel-button__right" onClick={handleNext}>
           <img src="https://www.iconpacks.net/icons/2/free-arrow-right-icon-3098-thumb.png" alt="right" />
         </button>
+        <div className="carousel-indicators">
+          {slides.map((_, index) => (
+            <div
+              key={index}
+              className={`indicator ${index === activeIndex ? 'active' : ''}`}
+              onClick={() => setActiveIndex(index)}
+            ></div>
+          ))}
+        </div>
       </div>
     </div>
   );
