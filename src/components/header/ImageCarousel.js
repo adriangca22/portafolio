@@ -4,9 +4,9 @@ import 'tailwindcss/tailwind.css';
 
 import image0 from "../../assets/img/nike.png"
 import image1 from "../../assets/img/nft.jpg";
-import image2 from "../../assets/img/jero.png";
-import image3 from "../../assets/img/eso.jpg";
-import image4 from "../../assets/img/ram.jpg";
+import image2 from "../../assets/img/jopx.png";
+import image3 from "../../assets/img/jero.png";
+import image4 from "../../assets/img/aka.png";
 import image5 from "../../assets/img/beach.png";
 import image6 from "../../assets/img/reloj.png";
 import image7 from "../../assets/img/pito.png";
