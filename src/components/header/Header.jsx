@@ -3,10 +3,10 @@ import "./Header.css";
 import Navbar from "./Navbar"; // Asegúrate de que la ruta sea correcta
 import ImageCarousel from "./ImageCarousel";
 import Buttons from "../Buttons/Buttons";
-import imgPerfil from "../../assets/img/mclovin.jpg";
+import imgPerfil from "../../assets/img/mclovin4.jpg";
 import certificateImg1 from "../../assets/img/certificate1.jpg";
 import certificateImg2 from "../../assets/img/certificate2.jpg";
-import image1 from "../../assets/img/casa.jpg";
+import image1 from "../../assets/img/oli.png";
 import image2 from "../../assets/img/bili.jpg";
 import image3 from "../../assets/img/pc.png";
 import image4 from "../../assets/img/trello.png";
@@ -23,8 +23,13 @@ import image14 from "../../assets/img/redux.jpg";
 import image15 from "../../assets/img/merak.png";
 import image16 from "../../assets/img/gamers.png";
 import image17 from "../../assets/img/mine.png";
-import image18 from "../../assets/img/futbol.png";
+import image18 from "../../assets/img/gal.jpg";
 import image19 from "../../assets/img/Word.png";
+import image20 from "../../assets/img/ecom.png";
+import image21 from "../../assets/img/resta.png";
+import image22 from "../../assets/img/hogar.png";
+import image23 from "../../assets/img/gafi.jpg";
+
 import portfolioImage from "../../assets/img/adri.png";
 
 export default function Header() {
@@ -86,27 +91,21 @@ export default function Header() {
 
 
   </div>
-          <h2 className="contain-title">
+  <div id="abo" className="about-section">
+  <h1  className="about-title">Acerca de mí</h1>
+  <div className="about-content">
+    <p>
+      ¡Hola! Soy Adrian González, un apasionado del diseño UI/UX 
+      y desarrollo web. Mi enfoque principal se centra en el frontend, donde me 
+      especializo en la creación de experiencias digitales cautivadoras y funcionales.
+    </p>
+    <p>
+      Desde el concepto hasta la implementación, utilizo una amplia 
+      variedad de herramientas, desde Adobe hasta Figma, para dar vida a mis ideas. Además, me sumerjo en la codificación con HTML,
+      CSS y JavaScript para asegurar que mis diseños se conviertan en sitios web interactivos y atractivos.
+    </p>
+  </div>
 
-            <h1 id="abo" className="titl">
-                       <img src={portfolioImage} alt="Portafolio" style={{ width: '110px', height: '80px', margintop: '-50px',position: 'absolute', // establecer posición absoluta
-    top: '-30px',left: '10px' }} />  Acerca de mí:
-            </h1>
-
-          </h2>
-          <div>
-
-            <p className="dim">
-             ¡Hola! Soy Adrian González, un apasionado del diseño UI/UX 
-             y desarrollo web. Mi enfoque principal se centra en el frontend, donde me 
-             especializo en la creación de experiencias digitales cautivadoras y funcionales.
-             Desde el concepto hasta la implementación, utilizo una amplia 
-            variedad de herramientas, desde Adobe hasta Figma, para dar vida a mis ideas. Además, me sumerjo en la codificación con HTML,
-              CSS y JavaScript para asegurar que mis diseños se conviertan en sitios web interactivos y atractivos.
-
-
-
-            </p>
           </div>
 
           <Buttons />
@@ -117,20 +116,17 @@ export default function Header() {
 
       </div>
       <div className="component-container">
-        <h2 id="expe" className="component-title">
-          experiencia y tecnologias{" "}
-        </h2>
-        <p className="component-description">
-        Me especializo en el diseño de interfaces de usuario
-          intuitivas y atractivas para aplicaciones web y sitios web. Mi enfoque
-          principal se centra en la edición de código HTML y CSS para lograr una
-          estructura sólida y estilos visuales impactantes.A lo largo de mi
-          carrera, he trabajado en diversos proyectos en los que he utilizado
-          JavaScript como lenguaje principal, especialmente con los frameworks
-          React y Next.js. Estas herramientas me han permitido crear
-          aplicaciones web dinámicas y de alto rendimiento, brindando a los
-          usuarios una experiencia interactiva y fluida.
-        </p>
+      <h2 id="expe" className="component-title">
+  experiencia y tecnologias{" "}
+</h2>
+<p className="component-description">
+  Me especializo en el diseño de interfaces de usuario intuitivas y atractivas para aplicaciones web y sitios web. Mi enfoque
+  principal se centra en la edición de código HTML y CSS para lograr una estructura sólida y estilos visuales impactantes. A lo largo de mi
+  carrera, he trabajado en diversos proyectos en los que he utilizado JavaScript como lenguaje principal, especialmente con los frameworks
+  React y Next.js. Estas herramientas me han permitido crear aplicaciones web dinámicas y de alto rendimiento, brindando a los
+  usuarios una experiencia interactiva y fluida.
+</p>
+
         <div className="image-container">
           <div className="image-wrapper">
             <img src={image7} alt="Imagen 1" className="small-image" />
@@ -146,6 +142,7 @@ export default function Header() {
 
             <div className="image-text" data-text="Java.S"></div>
           </div>
+          
           <div className="image-wrapper">
             <img src={image10} alt="Imagen 4" className="small-image" />
 
@@ -176,6 +173,7 @@ export default function Header() {
 
             <div className="image-text" data-text="Wordpress"></div>
           </div>
+          
         </div>
       </div>
       
@@ -200,13 +198,13 @@ export default function Header() {
       <ImageCarousel />
 
       <div className="gallery">
-        <h2 id="galeria" className="gallery-title">
-          Mis proyectos
+        <h2 id="galeria" className="gal-tit">
+          Mis proyectos Web
         </h2>
         <div className="gallery-images">
           <div className="gallery-item">
             <a
-              href="https://hogar-8bc1e.web.app/"
+              href="https://e-commerce-kappa-olive.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -214,7 +212,24 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo de pagina web de inmobiliaria
+                modelo web ecommerce
+              </h3>
+              <p className="image-description">
+                #html #Bootstrap #css #JavaScript
+              </p>
+            </div>
+          </div>
+          <div className="gallery-item">
+            <a
+              href="https://hogar-8bc1e.web.app/#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image22} alt="Imagen 15" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">
+                modelo web remodelacion de hogares
               </h3>
               <p className="image-description">
                 #html #Bootstrap #css #JavaScript
@@ -237,7 +252,23 @@ export default function Header() {
               <p className="image-description">#html #Sass #css #JavaScript</p>
             </div>
           </div>
-
+          <div className="gallery-item">
+            <a
+              href="https://e-commerce-2-rho.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image20} alt="Imagen 15" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">
+                modelo web ecommerce shop
+              </h3>
+              <p className="image-description">
+                #html #Bootstrap #css #JavaScript
+              </p>
+            </div>
+          </div>
           <div className="gallery-item">
             <a
               href="https://merak-us.web.app/#home"
@@ -289,7 +320,7 @@ export default function Header() {
           </div>
           <div className="gallery-item">
             <a
-              href="https://lu4pvhvxutjvwdpzfaogra.on.drv.tw/www.ftubol.demo/"
+              href="https://ux-ui-designer-alpha.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -297,7 +328,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo de pagina Ranking de futbolistas.{" "}
+                modelo de pagina web informativa ux/ui{" "}
               </h3>
               <p className="image-description">
                 #html #Sass #Bootstrap #css #JavaScript
@@ -332,6 +363,40 @@ export default function Header() {
               <h3 className="image-title">aplicacion web clon de trello</h3>
               <p className="image-description">
                 #React #next.js #css #Tailwind{" "}
+              </p>
+            </div>
+          </div>
+          <div className="gallery-item">
+            <a
+              href="https://food-design-gamma.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image21} alt="Imagen 15" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">
+             aplicacion web para platillos
+              </h3>
+              <p className="image-description">
+              #React #next.js #css #Tailwind #angular
+              </p>
+            </div>
+          </div>
+          <div className="gallery-item">
+            <a
+              href="https://finance-henna-phi.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image23} alt="Imagen 15" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">
+             aplicacion web app de finanzas.
+              </h3>
+              <p className="image-description">
+              #React #next.js #css #Tailwind #vite
               </p>
             </div>
           </div>
