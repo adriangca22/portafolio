@@ -7,7 +7,7 @@ import {
   FaBriefcase,
   FaDesktop,
   FaInstagram,
-  FaFacebookF,
+  FaGithub,
   FaLinkedinIn,
   FaWhatsapp,
 } from "react-icons/fa";
@@ -43,8 +43,8 @@ const Navbar = () => {
   <a href="https://instagram.com/adrian_designerr33?igshid=MmJiY2I4NDBkZg==" target="_blank" rel="noopener noreferrer">
     <FaInstagram className="social-icon text-white w-4 h-4" />
   </a>
-  <a href="https://www.facebook.com/people/Adrian-Gonzalez/pfbid02o3tocCAoaFo8onahZZEZGGr5K4aegj4MaeMtsbBvy2Jjrug9VwcnvfHpoUgz2Gfzl/" target="_blank" rel="noopener noreferrer">
-    <FaFacebookF className="social-icon text-white w-4 h-4" />
+  <a href="https://github.com/adriangca22" target="_blank" rel="noopener noreferrer">
+    <FaGithub className="social-icon text-white w-4 h-4" />
   </a>
   <a href="https://www.linkedin.com/in/adrian-gonzalez-6257aa204" target="_blank" rel="noopener noreferrer">
     <FaLinkedinIn className="social-icon text-white w-4 h-4" />

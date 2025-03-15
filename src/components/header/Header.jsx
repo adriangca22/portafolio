@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "./Header.css";
 import Navbar from "./Navbar"; // Asegúrate de que la ruta sea correcta
 import ImageCarousel from "./ImageCarousel";
@@ -15,11 +16,11 @@ import image6 from "../../assets/img/music.png";
 import image7 from "../../assets/img/html.png";
 import image8 from "../../assets/img/css.png";
 import image9 from "../../assets/img/js.jpg";
-import image10 from "../../assets/img/figma.png";
+import image10 from "../../assets/img/framer.png";
 import image11 from "../../assets/img/react.png";
 import image12 from "../../assets/img/next.jpg";
-import image13 from "../../assets/img/tail.jpg";
-import image14 from "../../assets/img/redux.jpg";
+import image13 from "../../assets/img/figma.png";
+import image14 from "../../assets/img/shopi.png";
 import image15 from "../../assets/img/merak.png";
 import image16 from "../../assets/img/gamers.png";
 import image17 from "../../assets/img/mine.png";
@@ -29,8 +30,20 @@ import image20 from "../../assets/img/ecom.png";
 import image21 from "../../assets/img/resta.png";
 import image22 from "../../assets/img/hogar.png";
 import image23 from "../../assets/img/gafi.jpg";
+import image24 from "../../assets/img/elementor.png";
+import image25 from "../../assets/img/vite.png";
+import image26 from "../../assets/img/firebase.png";
+import image27 from "../../assets/img/html2.png";
+import image28 from "../../assets/img/css2.png";
+import image29 from "../../assets/img/js2.png";
+import image30 from "../../assets/img/nextp.png";
+import image31 from "../../assets/img/fig.png";
+
+
 
 import portfolioImage from "../../assets/img/adri.png";
+
+
 
 export default function Header() {
   const [toggleState, setToggleState] = useState(true);
@@ -117,79 +130,134 @@ export default function Header() {
       </div>
       <div className="component-container">
       <h2 id="expe" className="component-title">
-  experiencia y tecnologias{" "}
+  Experiencia y Tecnologias{" "}
 </h2>
 <p className="component-description">
-  Me especializo en el diseño de interfaces de usuario intuitivas y atractivas para aplicaciones web y sitios web. Mi enfoque
-  principal se centra en la edición de código HTML y CSS para lograr una estructura sólida y estilos visuales impactantes. A lo largo de mi
-  carrera, he trabajado en diversos proyectos en los que he utilizado JavaScript como lenguaje principal, especialmente con los frameworks
-  React y Next.js. Estas herramientas me han permitido crear aplicaciones web dinámicas y de alto rendimiento, brindando a los
-  usuarios una experiencia interactiva y fluida.
+Me especializo en el diseño y desarrollo de interfaces de usuario intuitivas y atractivas para aplicaciones web y sitios en línea, optimizando código para lograr estructuras sólidas y estilos visuales impactantes. A lo largo de mi trayectoria, he trabajado en diversos proyectos utilizando tecnologías modernas para crear experiencias digitales dinámicas y de alto rendimiento.
+
+Frameworks y herramientas de desarrollo web: HTML, CSS, JavaScript, React, Next.js, Vite, WordPress, Elementor, Framer, Figma, Shopify.
 </p>
 
-        <div className="image-container">
-          <div className="image-wrapper">
-            <img src={image7} alt="Imagen 1" className="small-image" />
-            <div className="image-text" data-text="HTML5"></div>
-          </div>
-          <div className="image-wrapper">
-            <img src={image8} alt="Imagen 2" className="small-image" />
-
-            <div className="image-text" data-text="CSS3"></div>
-          </div>
-          <div className="image-wrapper">
-            <img src={image9} alt="Imagen 3" className="small-image" />
-
-            <div className="image-text" data-text="Java.S"></div>
-          </div>
-          
-          <div className="image-wrapper">
-            <img src={image10} alt="Imagen 4" className="small-image" />
-
-            <div className="image-text" data-text="Figma"></div>
-          </div>
-          <div className="image-wrapper">
-            <img src={image11} alt="Imagen 5" className="small-image" />
-
-            <div className="image-text" data-text="React"></div>
-          </div>
-          <div className="image-wrapper">
-            <img src={image12} alt="Imagen 6" className="small-image" />
-
-            <div className="image-text" data-text="Next.js"></div>
-          </div>
-          <div className="image-wrapper">
-            <img src={image13} alt="Imagen 7" className="small-image" />
-
-            <div className="image-text" data-text="Tailwind"></div>
-          </div>
-          <div className="image-wrapper">
-            <img src={image14} alt="Imagen 8" className="small-image" />
-
-            <div className="image-text" data-text="Redux"></div>
-          </div>
-          <div className="image-wrapper">
-            <img src={image19} alt="Imagen 19" className="small-image" />
-
-            <div className="image-text" data-text="Wordpress"></div>
-          </div>
-          
-        </div>
+<div className="carousel-containerr">
+  <div className="image-containerr">
+    <div className="carousel-trackr">
+      {/* Primera ronda de imágenes */}
+      <div className="image-wrapper">
+        <img src={image27} alt="Imagen 1" className="small-image" />
+        <div className="image-text" data-text="HTML5"></div>
       </div>
+      <div className="image-wrapper">
+        <img src={image28} alt="Imagen 2" className="small-image" />
+        <div className="image-text" data-text="CSS3"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image29} alt="Imagen 3" className="small-image" />
+        <div className="image-text" data-text="Java.S"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image10} alt="Imagen 4" className="small-image" />
+        <div className="image-text" data-text="Framer"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image11} alt="Imagen 5" className="small-image" />
+        <div className="image-text" data-text="React"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image30} alt="Imagen 6" className="small-image" />
+        <div className="image-text" data-text="Next.js"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image31} alt="Imagen 7" className="small-image" />
+        <div className="image-text" data-text="Figma.js"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image24} alt="Imagen 8" className="small-image" />
+        <div className="image-text" data-text="Elementor"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image14} alt="Imagen 9" className="small-image" />
+        <div className="image-text" data-text="Shopify"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image26} alt="Imagen 10" className="small-image" />
+        <div className="image-text" data-text="Firebase"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image19} alt="Imagen 11" className="small-image" />
+        <div className="image-text" data-text="Wordpress"></div>
+      </div>
+
+      {/* Segunda ronda de imágenes (Duplicadas para el bucle infinito) */}
+      <div className="image-wrapper">
+        <img src={image27} alt="Imagen 1" className="small-image" />
+        <div className="image-text" data-text="HTML5"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image28} alt="Imagen 2" className="small-image" />
+        <div className="image-text" data-text="CSS3"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image29} alt="Imagen 3" className="small-image" />
+        <div className="image-text" data-text="Java.S"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image10} alt="Imagen 4" className="small-image" />
+        <div className="image-text" data-text="Framer"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image11} alt="Imagen 5" className="small-image" />
+        <div className="image-text" data-text="React"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image30} alt="Imagen 6" className="small-image" />
+        <div className="image-text" data-text="Next.js"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image31} alt="Imagen 7" className="small-image" />
+        <div className="image-text" data-text="Figma.js"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image24} alt="Imagen 8" className="small-image" />
+        <div className="image-text" data-text="Elementor"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image14} alt="Imagen 9" className="small-image" />
+        <div className="image-text" data-text="Shopify"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image26} alt="Imagen 10" className="small-image" />
+        <div className="image-text" data-text="Firebase"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image19} alt="Imagen 11" className="small-image" />
+        <div className="image-text" data-text="Wordpress"></div>
+      </div>
+    </div>
+  </div>
+  </div></div>
+
       
       
 
-      <div className="certificates">
-        <h2 className="certificates-title">Certificados</h2>
-            <p className="component-description">
-        estos son mis certificados otorgados por la academia freecodecamp para el  diseño web responsivo y 
-          el manejo de datos y estructuras en javascript.
-        </p>
-        <div className="certificate-images">
-          <img src={certificateImg1} alt="Certificado 1" />
-          <img src={certificateImg2} alt="Certificado 2" />
-        </div>
-      </div>
+  <div className="certificates">
+  <h2 className="certificates-title">Certificados</h2>
+  <p className="component-description">
+    Estos son mis certificados otorgados por la academia FreeCodeCamp para el 
+    diseño web responsivo y el manejo de datos y estructuras en JavaScript.
+  </p>
+  <div className="certificate-images">
+    <div className="certificate-item">
+      <img src={certificateImg1} alt="Certificado 1" />
+    </div>
+    <div className="certificate-item">
+      <img src={certificateImg2} alt="Certificado 2" />
+    </div>
+  </div>
+</div>
+
+
+
+      
       <div>
         <h2 id="carro" className="gal-title pt-20">
           Diseños Ux/UI
@@ -239,7 +307,7 @@ export default function Header() {
 
           <div className="gallery-item">
             <a
-              href="https://music-web-93fd8.web.app/"
+              href="https://car-rebrand.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -247,7 +315,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo de pagina web galería de musica{" "}
+                modelo de app web de Transacción vehicular traspaso de vehículos{" "}
               </h3>
               <p className="image-description">#html #Sass #css #JavaScript</p>
             </div>

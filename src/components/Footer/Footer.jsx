@@ -1,7 +1,7 @@
 import "./Footer.css";
 import { BsMouse } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
@@ -25,10 +25,10 @@ export const Footer = () => {
           <BsInstagram className="social" />
         </a>
         <a
-          href="https://www.facebook.com/people/Adrian-Gonzalez/pfbid02o3tocCAoaFo8onahZZEZGGr5K4aegj4MaeMtsbBvy2Jjrug9VwcnvfHpoUgz2Gfzl/"
+          href="https://github.com/adriangca22"
           target={"blank"}
         >
-          <FaFacebookF className="social" />
+          <FaGithub className="social" />
         </a>
         <a
           href="https://www.linkedin.com/in/adrian-gonzalez-6257aa204"
