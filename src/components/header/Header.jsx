@@ -186,7 +186,10 @@ Frameworks y herramientas de desarrollo web: HTML, CSS, JavaScript, React, Next.
         <img src={image19} alt="Imagen 11" className="small-image" />
         <div className="image-text" data-text="Wordpress"></div>
       </div>
-
+      <div className="image-wrapper">
+        <img src={image25} alt="Imagen 11" className="small-image" />
+        <div className="image-text" data-text="Vite"></div>
+      </div>
       {/* Segunda ronda de imágenes (Duplicadas para el bucle infinito) */}
       <div className="image-wrapper">
         <img src={image27} alt="Imagen 1" className="small-image" />
@@ -231,6 +234,10 @@ Frameworks y herramientas de desarrollo web: HTML, CSS, JavaScript, React, Next.
       <div className="image-wrapper">
         <img src={image19} alt="Imagen 11" className="small-image" />
         <div className="image-text" data-text="Wordpress"></div>
+      </div>
+      <div className="image-wrapper">
+        <img src={image25} alt="Imagen 11" className="small-image" />
+        <div className="image-text" data-text="Vite"></div>
       </div>
     </div>
   </div>
@@ -317,7 +324,7 @@ Frameworks y herramientas de desarrollo web: HTML, CSS, JavaScript, React, Next.
               <h3 className="image-title">
                 modelo de app web de Transacción vehicular traspaso de vehículos{" "}
               </h3>
-              <p className="image-description">#html #Sass #css #JavaScript</p>
+              <p className="image-description">#html #Sass #css #JavaScript #Vite #Firebase</p>
             </div>
           </div>
           <div className="gallery-item">
@@ -356,7 +363,7 @@ Frameworks y herramientas de desarrollo web: HTML, CSS, JavaScript, React, Next.
           </div>
           <div className="gallery-item">
             <a
-              href="https://gamersz-efeed.web.app/#"
+              href="https://travelsworld.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -364,7 +371,7 @@ Frameworks y herramientas de desarrollo web: HTML, CSS, JavaScript, React, Next.
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo de pagina web Blog de juegos.{" "}
+                modelo de pagina destinos de viajes.{" "}
               </h3>
               <p className="image-description">
                 #html #Sass #Bootstrap #css #JavaScript
