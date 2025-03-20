@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import ProgrammingCarousel from "./ProgrammingCarousel";
 import "./Header.css";
 import Navbar from "./Navbar"; // Asegúrate de que la ruta sea correcta
 import ImageCarousel from "./ImageCarousel";
@@ -45,6 +45,7 @@ import portfolioImage from "../../assets/img/adri.png";
 
 
 
+
 export default function Header() {
   const [toggleState, setToggleState] = useState(true);
 
@@ -55,6 +56,7 @@ export default function Header() {
   return (
     <>
       <Navbar />
+      <ProgrammingCarousel />
 
       <div id="info" className="info-container">
         <div className="logo">
