@@ -110,8 +110,7 @@ export default function Header() {
   <h1  className="about-title">Acerca de mí</h1>
   <div className="about-content">
     <p>
-      ¡Hola! Soy Adrian González, un apasionado del diseño UI/UX 
-      y desarrollo web. Mi enfoque principal se centra en el frontend, donde me 
+     Mi enfoque principal se centra en el frontend, donde me 
       especializo en la creación de experiencias digitales cautivadoras y funcionales.
     </p>
     <p>
@@ -134,10 +133,13 @@ export default function Header() {
       <h2 id="expe" className="component-title">
   Experiencia y Tecnologias{" "}
 </h2>
-<p className="component-description">
-Me especializo en el diseño y desarrollo de interfaces de usuario intuitivas y atractivas para aplicaciones web y sitios en línea, optimizando código para lograr estructuras sólidas y estilos visuales impactantes. A lo largo de mi trayectoria, he trabajado en diversos proyectos utilizando tecnologías modernas para crear experiencias digitales dinámicas y de alto rendimiento.
+<p
+  className="component-description"
+  style={{ fontSize: "18px", lineHeight: "1.6", color: "white" }}
+>
+  Me especializo en el diseño y desarrollo de interfaces de usuario intuitivas y atractivas para aplicaciones web y sitios en línea, optimizando código para lograr estructuras sólidas y estilos visuales impactantes. A lo largo de mi trayectoria, he trabajado en diversos proyectos utilizando tecnologías modernas para crear experiencias digitales dinámicas y de alto rendimiento.
 
-Frameworks y herramientas de desarrollo web: HTML, CSS, JavaScript, React, Next.js, Vite, WordPress, Elementor, Framer, Figma, Shopify.
+  Frameworks y herramientas de desarrollo web: HTML, CSS, JavaScript, React, Next.js, Vite, WordPress, Elementor, Framer, Figma, Shopify.
 </p>
 
 <div className="carousel-containerr">
@@ -250,7 +252,7 @@ Frameworks y herramientas de desarrollo web: HTML, CSS, JavaScript, React, Next.
 
   <div className="certificates">
   <h2 className="certificates-title">Certificados</h2>
-  <p className="component-description">
+  <p className="component-description"   style={{ fontSize: "18px", lineHeight: "1.6", color: "white" }}>
     Estos son mis certificados otorgados por la academia FreeCodeCamp para el 
     diseño web responsivo y el manejo de datos y estructuras en JavaScript.
   </p>

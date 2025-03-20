@@ -7,103 +7,121 @@
   overflow: hidden;
   border-radius: 12px; /* Bordes redondeados */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra elegante */
-  /* Forma de TV/monitor */
-  border: 15px solid #333;
-  border-radius: 20px;
-  background-color: #000;
+  background-color: #000; /* Fondo negro para el contenedor */
   padding: 5px;
-  /* Efecto de brillo exterior */
-  position: relative;
+  height: 400px; /* Altura fija para el contenedor */
+  z-index: 1; /* Asegura que el contenido principal esté encima */
 }
 
-/* Efecto de brillo para simular TV */
+/* Efecto de luces blur hacia afuera (primera capa) */
 .carouselContainer::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  z-index: -1;
-  border-radius: 30px;
-  background: transparent;
-  box-shadow: 
-    0 0 20px rgba(255, 255, 255, 0.7),
-    0 0 40px rgba(173, 216, 230, 0.8),
-    0 0 60px rgba(135, 206, 250, 0.5);
-  animation: tvGlow 3s infinite alternate;
+  top: -30px; /* Extiende hacia arriba */
+  left: -30px; /* Extiende hacia la izquierda */
+  right: -30px; /* Extiende hacia la derecha */
+  bottom: -30px; /* Extiende hacia abajo */
+  z-index: -1; /* Colocado detrás del contenido principal */
+  border-radius: 50%; /* Forma circular para un efecto suave */
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 10%,
+    rgba(173, 216, 230, 0.4) 50%,
+    rgba(135, 206, 250, 0.2) 100%
+  ); /* Gradiente radial para simular luz */
+  filter: blur(30px); /* Efecto de desenfoque intenso */
+  animation: glowAnimation 3s infinite alternate; /* Animación de brillo */
 }
 
-/* Base del TV/monitor */
+/* Segunda capa de luces (blancas y azules claras) */
 .carouselContainer::after {
   content: "";
   position: absolute;
+  top: -50px; /* Extensión mayor para este efecto */
+  left: -50px;
+  right: -50px;
   bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
-  height: 30px;
-  background: #333;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  z-index: -2; /* Detrás de ::before */
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 20%,
+    rgba(173, 216, 230, 0.3) 60%,
+    rgba(135, 206, 250, 0.1) 100%
+  );
+  filter: blur(50px); /* Desenfoque más pronunciado */
+  animation: pulseAnimation 4s infinite ease-in-out; /* Animación de pulso */
 }
 
-@keyframes tvGlow {
+/* Animación de expansión para ::before */
+@keyframes glowAnimation {
   0% {
-    box-shadow: 
-      0 0 20px rgba(255, 255, 255, 0.7),
-      0 0 40px rgba(173, 216, 230, 0.8),
-      0 0 60px rgba(135, 206, 250, 0.5);
+    transform: scale(1); /* Escala inicial */
   }
   100% {
-    box-shadow: 
-      0 0 30px rgba(255, 255, 255, 0.9),
-      0 0 60px rgba(173, 216, 230, 1),
-      0 0 80px rgba(135, 206, 250, 0.7);
+    transform: scale(1.1); /* Escala ligeramente mayor para simular expansión */
   }
 }
 
-/* Slide del carrusel */
+/* Animación de pulso para ::after */
+@keyframes pulseAnimation {
+  0% {
+    opacity: 0.5; /* Opacidad inicial */
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1; /* Opacidad máxima */
+    transform: scale(1.2); /* Expansión intermedia */
+  }
+  100% {
+    opacity: 0.5; /* Regresa a la opacidad inicial */
+    transform: scale(1);
+  }
+}
+
+/* Nuevo contenedor para el track del carrusel */
+.carouselTrack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Slide del carrusel - mantenemos para compatibilidad */
 .carouselSlide {
   display: flex;
   width: 200%; /* 100% por cada una de las 2 imágenes */
   transition: transform 0.5s ease-in-out; /* Transición suave entre imágenes */
 }
 
-/* Contenedor de cada slide */
+/* Contenedor de cada slide - actualizado para posicionamiento absoluto */
 .slide {
-  position: relative;
-  width: 50%; /* Cada slide ocupa 50% del ancho total */
-  min-width: 50%; /* Asegura que el slide no se encoja */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
 }
 
 /* Estilo de las imágenes */
 .carouselImage {
   width: 100%;
-  height: 400px; /* Altura fija para las imágenes */
+  height: 100%; /* Usa toda la altura del contenedor */
   object-fit: cover; /* Ajusta las imágenes sin deformarlas */
-  border-radius: 8px; /* Bordes redondeados más pequeños para que se vea dentro del "TV" */
+  border-radius: 8px; /* Bordes redondeados más pequeños */
   position: relative;
   z-index: 1;
 }
 
-/* Eliminamos el ::after de carouselImage ya que ahora el brillo lo maneja el contenedor */
-/* .carouselImage::after {
-  ...
-} */
-
-/* Líneas de escaneo para efecto TV */
+/* Líneas de escaneo para efecto TV (opcional) */
 .scanlines {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    transparent 50%,
-    rgba(0, 0, 0, 0.05) 50%
-  );
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.05) 50%);
   background-size: 100% 4px;
   z-index: 3;
   pointer-events: none;
@@ -126,9 +144,8 @@
   text-align: center;
   padding: 20px;
   border-radius: 8px; /* Ajustado para coincidir con las imágenes */
-  opacity: 0; /* Inicialmente invisible */
-  animation: fadeIn 1s ease-in-out forwards; /* Animación de entrada */
   z-index: 2; /* Asegura que esté por encima de la imagen */
+  animation: fadeIn 1s ease-in-out forwards; /* Animación de entrada */
 }
 
 /* Animación de entrada */
@@ -218,24 +235,50 @@
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Botones de encendido y otros controles de TV */
-.tvControls {
-  position: absolute;
-  right: -50px;
-  top: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+/* Media queries para responsividad */
+@media (max-width: 1200px) {
+  .carouselContainer {
+    max-width: 90%;
+  }
 }
 
-.tvButton {
-  width: 15px;
-  height: 15px;
-  background-color: #555;
-  border-radius: 50%;
-  border: 2px solid #444;
+@media (max-width: 768px) {
+  .carouselContainer {
+    margin-top: 40px;
+    height: 350px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
 }
 
-.powerButton {
-  background-color: #f44336;
+@media (max-width: 480px) {
+  .carouselContainer {
+    height: 300px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .iconsContainer {
+    gap: 10px;
+  }
 }

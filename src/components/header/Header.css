@@ -36,8 +36,8 @@
 .component-description {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif; /* Elige fuentes profesionales */
-  font-size: 1.1rem; /* Tamaño de fuente estándar */
-  font-weight: 400; /* Peso de la fuente para un aspecto limpio */
+  font-size: 5rem; /* Tamaño de fuente estándar */
+  font-weight: 30px; /* Peso de la fuente para un aspecto limpio */
   line-height: 1.6; /* Espaciado adecuado entre líneas */
   color: #ffffff; /* Color de texto oscuro y profesional */
   
