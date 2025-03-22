@@ -308,6 +308,12 @@
 .info-container .logo .hover-show.active {
   animation: showspin 8s linear 2s infinite;
 }
+@media (max-width: 768px) {
+  .info-container {
+    top: -200px;
+  }
+}
+
 @keyframes showspin {
   to {
     transform: rotate(360deg);

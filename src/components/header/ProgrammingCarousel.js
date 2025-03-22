@@ -8,6 +8,11 @@ import { FaCode, FaReact, FaNodeJs, FaFigma, FaWordpress, FaPaintBrush } from "r
 
 const CoverCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [titleText, setTitleText] = useState("")
+  const [descriptionText, setDescriptionText] = useState("")
+  const [titleIndex, setTitleIndex] = useState(0)
+  const [descriptionIndex, setDescriptionIndex] = useState(0)
+
   const images = [
     {
       src: image1,
@@ -26,10 +31,44 @@ const CoverCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }, 6000) // Cambia de imagen cada 5 segundos
+    }, 8000) // Cambia de imagen cada 6 segundos
 
     return () => clearInterval(interval) // Limpia el intervalo al desmontar el componente
   }, [images.length])
+
+  useEffect(() => {
+    const currentImage = images[currentIndex]
+    const title = currentImage.title
+    const description = currentImage.description
+
+    // Efecto de escritura para el título
+    if (titleIndex < title.length) {
+      const timeout = setTimeout(() => {
+        setTitleText((prev) => prev + title[titleIndex])
+        setTitleIndex((prev) => prev + 1)
+      }, 100) // Velocidad de escritura del título
+
+      return () => clearTimeout(timeout)
+    }
+
+    // Efecto de escritura para la descripción
+    if (titleIndex === title.length && descriptionIndex < description.length) {
+      const timeout = setTimeout(() => {
+        setDescriptionText((prev) => prev + description[descriptionIndex])
+        setDescriptionIndex((prev) => prev + 1)
+      }, 50) // Velocidad de escritura de la descripción
+
+      return () => clearTimeout(timeout)
+    }
+  }, [currentIndex, titleIndex, descriptionIndex, images])
+
+  // Reiniciar el efecto de escritura cuando cambia la imagen
+  useEffect(() => {
+    setTitleText("")
+    setDescriptionText("")
+    setTitleIndex(0)
+    setDescriptionIndex(0)
+  }, [currentIndex])
 
   return (
     <div className={styles.carouselContainer}>
@@ -57,8 +96,8 @@ const CoverCarousel = () => {
           >
             <img src={image.src || "/placeholder.svg"} alt={`slide-${index}`} className={styles.carouselImage} />
             <div className={styles.overlay}>
-              <h2 className={styles.title}>{image.title}</h2>
-              <p className={styles.description}>{image.description}</p>
+              <h2 className={styles.title}>{titleText}</h2>
+              <p className={styles.description}>{descriptionText}</p>
               <div className={styles.iconsContainer}>
                 {image.icons.map((icon, i) => (
                   <span key={i} className={styles.icon}>
@@ -84,4 +123,3 @@ const CoverCarousel = () => {
 }
 
 export default CoverCarousel
-

@@ -11,7 +11,7 @@ import image1 from "../../assets/img/oli.png";
 import image2 from "../../assets/img/bili.jpg";
 import image3 from "../../assets/img/pc.png";
 import image4 from "../../assets/img/trello.png";
-import image5 from "../../assets/img/emoji.png";
+import image5 from "../../assets/img/pelis.jpg";
 import image6 from "../../assets/img/music.png";
 import image7 from "../../assets/img/html.png";
 import image8 from "../../assets/img/css.png";
@@ -367,18 +367,18 @@ export default function Header() {
           </div>
           <div className="gallery-item">
             <a
-              href="https://travelsworld.vercel.app/"
+              href="https://adrimovie.vercel.app//"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={image16} alt="Imagen 2" />
+              <img src={image5} alt="Imagen 2" />
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo de pagina destinos de viajes.{" "}
+                modelo de pagina busqueda de peliculas por medio de APi.{" "}
               </h3>
               <p className="image-description">
-                #html #Sass #Bootstrap #css #JavaScript
+                #html #Sass #Vite #css #JavaScript #Firebase
               </p>
             </div>
           </div>
@@ -481,16 +481,18 @@ export default function Header() {
           </div>
           <div className="gallery-item">
             <a
-              href="https://emoji-app-coral.vercel.app/"
+              href="https://travelsworld.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={image5} alt="Imagen 5" />
+              <img src={image16} alt="Imagen 2" />
             </a>
             <div className="image-info">
-              <h3 className="image-title">aplicacion web de emojis</h3>
+              <h3 className="image-title">
+                modelo de pagina destinos de viajes.{" "}
+              </h3>
               <p className="image-description">
-                #React #next.js #css #Tailwind{" "}
+                #html #Sass #Bootstrap #css #JavaScript
               </p>
             </div>
           </div>
