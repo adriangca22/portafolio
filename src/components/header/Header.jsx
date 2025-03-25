@@ -28,7 +28,7 @@ import image18 from "../../assets/img/gal.jpg";
 import image19 from "../../assets/img/Word.png";
 import image20 from "../../assets/img/ecom.png";
 import image21 from "../../assets/img/resta.png";
-import image22 from "../../assets/img/hogar.png";
+import image22 from "../../assets/img/hogar.jpg";
 import image23 from "../../assets/img/gafi.jpg";
 import image24 from "../../assets/img/elementor.png";
 import image25 from "../../assets/img/vite.png";
@@ -300,7 +300,7 @@ export default function Header() {
           </div>
           <div className="gallery-item">
             <a
-              href="https://hogar-8bc1e.web.app/#"
+              href="https://adoptapets.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -308,7 +308,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo web remodelacion de hogares
+                modelo web Pagina de adopción de mascotas
               </h3>
               <p className="image-description">
                 #html #Bootstrap #css #JavaScript
