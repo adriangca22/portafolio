@@ -8,7 +8,7 @@ import imgPerfil from "../../assets/img/mclovin4.jpg";
 import certificateImg1 from "../../assets/img/certificate1.jpg";
 import certificateImg2 from "../../assets/img/certificate2.jpg";
 import image1 from "../../assets/img/oli.png";
-import image2 from "../../assets/img/bili.jpg";
+import image2 from "../../assets/img/barber.jpg";
 import image3 from "../../assets/img/pc.png";
 import image4 from "../../assets/img/trello.png";
 import image5 from "../../assets/img/pelis.jpg";
@@ -21,9 +21,9 @@ import image11 from "../../assets/img/react.png";
 import image12 from "../../assets/img/next.jpg";
 import image13 from "../../assets/img/figma.png";
 import image14 from "../../assets/img/shopi.png";
-import image15 from "../../assets/img/merak.png";
+import image15 from "../../assets/img/travel.jpg";
 import image16 from "../../assets/img/gamers.png";
-import image17 from "../../assets/img/mine.png";
+import image17 from "../../assets/img/food.jpg";
 import image18 from "../../assets/img/gal.jpg";
 import image19 from "../../assets/img/Word.png";
 import image20 from "../../assets/img/ecom.png";
@@ -38,6 +38,9 @@ import image28 from "../../assets/img/css2.png";
 import image29 from "../../assets/img/js2.png";
 import image30 from "../../assets/img/nextp.png";
 import image31 from "../../assets/img/fig.png";
+import image32 from "../../assets/img/bili.jpg";
+import image33 from "../../assets/img/emoji.png";
+import image34 from "../../assets/img/fig.png";
 
 
 
@@ -291,7 +294,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo web ecommerce
+                Modelo web ecommerce
               </h3>
               <p className="image-description">
                 #html #Bootstrap #css #JavaScript
@@ -308,7 +311,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo web Pagina de adopción de mascotas
+                Modelo web Pagina de adopción de mascotas
               </h3>
               <p className="image-description">
                 #html #Bootstrap #css #JavaScript
@@ -318,7 +321,7 @@ export default function Header() {
 
           <div className="gallery-item">
             <a
-              href="https://car-rebrand.vercel.app/"
+              href="https://barber-pi-pearl.vercel.app//"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -326,7 +329,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo de app web de Transacción vehicular traspaso de vehículos{" "}
+                modelo de app web Estilo barberia{" "}
               </h3>
               <p className="image-description">#html #Sass #css #JavaScript #Vite #Firebase</p>
             </div>
@@ -341,7 +344,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo web ecommerce shop
+                Modelo web ecommerce shop
               </h3>
               <p className="image-description">
                 #html #Bootstrap #css #JavaScript
@@ -350,7 +353,7 @@ export default function Header() {
           </div>
           <div className="gallery-item">
             <a
-              href="https://merak-us.web.app/#home"
+              href="https://adritours.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -358,7 +361,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo de pagina web landing page MerakUs{" "}
+                Modelo de pagina de agencia de viajes destinos turisticos{" "}
               </h3>
               <p className="image-description">
                 #html #Bootstrap #Sass #css #JavaScript
@@ -375,7 +378,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo de pagina busqueda de peliculas por medio de APi.{" "}
+                Modelo de pagina busqueda de peliculas por medio de APi.{" "}
               </h3>
               <p className="image-description">
                 #html #Sass #Vite #css #JavaScript #Firebase
@@ -384,14 +387,14 @@ export default function Header() {
           </div>
           <div className="gallery-item">
             <a
-              href="https://restaurante-e233b.web.app/"
+              href="https://adrifood.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={image17} alt="Imagen 2" />
             </a>
             <div className="image-info">
-              <h3 className="image-title">modelo pagina de restaurante </h3>
+              <h3 className="image-title">Modelo pagina de restaurante </h3>
               <p className="image-description">
                 #html #Bootstrap #Sass #css #JavaScript
               </p>
@@ -407,7 +410,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo de pagina web informativa ux/ui{" "}
+                Modelo de pagina web informativa ux/ui{" "}
               </h3>
               <p className="image-description">
                 #html #Sass #Bootstrap #css #JavaScript
@@ -424,7 +427,7 @@ export default function Header() {
               <img src={image3} alt="Imagen 3" />
             </a>
             <div className="image-info">
-              <h3 className="image-title">modelo de pagina web setup gamers</h3>
+              <h3 className="image-title">Modelo de pagina web setup gamers</h3>
               <p className="image-description">
                 #html #Bootstrap #Sass #css #JavaScript
               </p>
@@ -439,7 +442,7 @@ export default function Header() {
               <img src={image4} alt="Imagen 4" />
             </a>
             <div className="image-info">
-              <h3 className="image-title">aplicacion web clon de trello</h3>
+              <h3 className="image-title">Aplicacion web clon de trello</h3>
               <p className="image-description">
                 #React #next.js #css #Tailwind{" "}
               </p>
@@ -455,7 +458,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-             aplicacion web para platillos
+             Aplicacion web para platillos
               </h3>
               <p className="image-description">
               #React #next.js #css #Tailwind #angular
@@ -472,7 +475,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-             aplicacion web app de finanzas.
+             Aplicacion web app de finanzas.
               </h3>
               <p className="image-description">
               #React #next.js #css #Tailwind #vite
@@ -489,7 +492,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                modelo de pagina destinos de viajes.{" "}
+                Modelo de pagina destinos de viajes.{" "}
               </h3>
               <p className="image-description">
                 #html #Sass #Bootstrap #css #JavaScript
@@ -506,10 +509,43 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                aplicacion web reproductor de musica
+                Aplicacion web reproductor de musica
               </h3>
               <p className="image-description">
                 #React #next.js #css #Tailwind{" "}
+              </p>
+            </div>
+          </div>
+          
+          <div className="gallery-item">
+            <a
+              href="https://car-rebrand.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image32} alt="Imagen 2" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">
+              Aplicación web de Transacción vehicular traspaso de vehículos{" "}
+              </h3>
+              <p className="image-description">#html #Sass #css #JavaScript #Vite #Firebase</p>
+            </div>
+          </div>
+          <div className="gallery-item">
+            <a
+              href="https://emoji-app-coral.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image33} alt="Imagen 15" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">
+          Aplicación web buscador de emojis
+              </h3>
+              <p className="image-description">
+                #html #Bootstrap #css #JavaScript
               </p>
             </div>
           </div>
