@@ -22,7 +22,7 @@ import image12 from "../../assets/img/next.jpg";
 import image13 from "../../assets/img/figma.png";
 import image14 from "../../assets/img/shopi.png";
 import image15 from "../../assets/img/travel.jpg";
-import image16 from "../../assets/img/gamers.png";
+import image16 from "../../assets/img/gamerx.jpg";
 import image17 from "../../assets/img/food.jpg";
 import image18 from "../../assets/img/gal.jpg";
 import image19 from "../../assets/img/Word.png";
@@ -484,7 +484,7 @@ export default function Header() {
           </div>
           <div className="gallery-item">
             <a
-              href="https://travelsworld.vercel.app/"
+              href="https://adrian-store-6cjq.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -492,7 +492,7 @@ export default function Header() {
             </a>
             <div className="image-info">
               <h3 className="image-title">
-                Modelo de pagina destinos de viajes.{" "}
+                Modelo de pagina tienda de articulos gamers.{" "}
               </h3>
               <p className="image-description">
                 #html #Sass #Bootstrap #css #JavaScript
