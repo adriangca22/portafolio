@@ -40,7 +40,10 @@ import image30 from "../../assets/img/nextp.png";
 import image31 from "../../assets/img/fig.png";
 import image32 from "../../assets/img/bili.jpg";
 import image33 from "../../assets/img/emoji.png";
-import image34 from "../../assets/img/fig.png";
+import image34 from "../../assets/img/p1.jpg";
+import image35 from "../../assets/img/p2.jpg";
+import image36 from "../../assets/img/p3.jpg";
+import image37 from "../../assets/img/p4.jpg";
 
 
 
@@ -278,7 +281,78 @@ export default function Header() {
         </h2>
       </div>
       <ImageCarousel />
+      <div className="gallery">
+        <h2 id="galeria" className="gal-tit">
+          Proyectos Actualmente  en producción
+        </h2>
+        <div className="gallery-images">
+          <div className="gallery-item">
+            <a
+              href="https://ekoevent.com/?srsltid=AfmBOoqRp9Gb60qcHRhXfKvNKvPy3lwoKuDvpU0cGNvhutQO0ICEGvh9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image36} alt="Imagen 15" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">
+              EkoEvent es una página web de comercio electrónico dedicada a la venta de productos ecológicos.
+              </h3>
+              <p className="image-description">
+                #Wordpress #Elememtor #css #JavaScript
+              </p>
+            </div>
+          </div>
+          <div className="gallery-item">
+            <a
+              href="https://avocaty.io/avocaty-ai/?_gl=1*v82vcs*_up*MQ..*_ga*MjA5MjgyNzU0My4xNzQ1OTcwNDM3*_ga_G9V5PL04VY*MTc0NTk3MDQzNy4xLjAuMTc0NTk3MDQzNy4wLjAuMA..*_ga_N3T910BDZ4*MTc0NTk3MDQzNy4xLjAuMTc0NTk3MDQzNy4wLjAuMA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image37} alt="Imagen 15" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">
+              Página web de Avocaty orientada a la creación de cartas digitales QR, fácil y rápida, para restaurantes y bares.              </h3>
+              <p className="image-description">
+              #Wordpress #Elememtor #css #JavaScript #react #nex.js
+              </p>
+            </div>
+          </div>
 
+          <div className="gallery-item">
+            <a
+              href="https://burocraciacero.com/como-funciona"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image34} alt="Imagen 2" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">
+              Pagina web Burocracia Cero es un servicio que gestiona por ti todos los trámites y papeleos relacionados con la transferencia de vehículos, ahorrándote tiempo y complicaciones.{" "}
+              </h3>
+              <p className="image-description">#html #Sass #css #JavaScript #jsx #Framer</p>
+            </div>
+          </div>
+          <div className="gallery-item">
+            <a
+              href="https://futureboyorgirl.com/?srsltid=AfmBOood2aSh6g4Qik6MStUBJoIeDFEkbAZhqlUARRK4WS91sJd-7sHR#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={image35} alt="Imagen 15" />
+            </a>
+            <div className="image-info">
+              <h3 className="image-title">
+              Página web dedicada a ofrecer un servicio que te permite conocer el sexo de tu bebé mediante inteligencia artificial.
+              </h3>
+              <p className="image-description">
+                #shopify #php #css #JavaScript
+              </p>
+            </div>
+          </div>
+          </div>  </div>
       <div className="gallery">
         <h2 id="galeria" className="gal-tit">
           Mis proyectos Web
